@@ -1,0 +1,79 @@
+.parentpage {
+  padding: 100px 0;
+  margin-top: 50px;
+}
+.parentpage h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: rgb(44, 62, 80);
+}
+.divs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.div1,
+.div2 {
+  width: 70px;
+  height: 4px;
+  background-color: rgb(44, 62, 80);
+  margin: 0 10px;
+}
+.ii {
+  color: rgb(44, 62, 80);
+}
+.card {
+  position: relative;
+}
+.child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(30, 188, 156, 0.8);
+  color: white;
+  opacity: 0;
+  transition: all 0.4s ease-in;
+}
+.card:hover .child {
+  opacity: 1;
+  cursor: pointer;
+}
+.child i {
+  font-size: 100px;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.modalContent {
+  padding: 20px;
+  border-radius: 8px;
+  width: 40%;
+}
+.modalContent img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+@media (max-width: 576px) {
+  .modalContent {
+    width: 90%;
+  }
+  .parentpage h1 {
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,82 @@
+.parentpage {
+  padding: 100px 0;
+  margin-top: 50px;
+}
+.parentpage h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: rgb(44, 62, 80);
+}
+.divs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.div1,
+.div2 {
+  width: 70px;
+  height: 4px;
+  background-color: rgb(44, 62, 80);
+  margin: 0 10px;
+}
+.ii {
+  color: rgb(44, 62, 80);
+}
+form {
+  width: 50%;
+  margin: auto;
+  margin-top: 50px;
+}
+.place {
+  position: relative;
+  margin-top: 15px;
+}
+input {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-bottom: 2px solid white;
+  border-radius: 5px;
+  margin: 15px 0;
+  background-color: transparent;
+}
+input:focus {
+  outline: none;
+  border-bottom: 2px solid rgb(26, 188, 156);
+}
+input:focus::placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+input:not(:placeholder-shown)::placeholder {
+  opacity: 0;
+}
+label {
+  padding: 15px;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  cursor: text;
+  color: rgb(26, 188, 156);
+  opacity: 0;
+  transition: opacity 0.3s ease, top 0.3s ease;
+}
+label.active {
+  opacity: 1;
+  top: -30px;
+}
+.button {
+  background-color: rgb(26, 188, 156);
+  color: white;
+  padding: 15px 25px;
+  border-radius: 15px;
+  border: none;
+  margin-top: 17px;
+  cursor: pointer;
+}
+@media (max-width: 576px) {
+  form {
+    width: 80%;
+  }
+}
