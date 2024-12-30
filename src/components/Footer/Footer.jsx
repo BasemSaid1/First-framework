@@ -4,7 +4,7 @@ import style from "./footer.module.css";
 export default function Footer() {
   return (
     <>
-      <div className={style.footer}>
+      <div className={`${style.footer} `}>
         <div className={style.content}>
           <div>
             <h2>LOCATION</h2>
@@ -28,9 +28,9 @@ export default function Footer() {
             </p>
           </div>
         </div>
-      </div>
-      <div className={style.Copyright}>
-        <p>Copyright © Your Website 2021</p>
+        <div className={style.Copyright}>
+          <p>Copyright © Your Website 2021</p>
+        </div>
       </div>
     </>
   );
